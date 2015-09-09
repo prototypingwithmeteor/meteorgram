@@ -1,0 +1,24 @@
+<template name="home">
+{{#contentFor "headerTitle"}}
+  <h1 class="title">App Name</h1>
+{{/contentFor}}
+
+{{#ionView}}
+  {{#ionSubheaderBar}}
+    <h2 class="title">Useful Ionic links</h2>
+  {{/ionSubheaderBar}}
+  {{#ionContent}}
+    {{#ionList}}
+      {{#ionItem  target="_blank" href="https://github.com/meteoric/meteor-ionic#demo-of-all-components"}}
+      Meteoric Demo
+      {{/ionItem}}
+      {{#ionItem  target="_blank" href="http://ionicframework.com/docs/"}}
+        Ionic Docs
+      {{/ionItem}}
+      {{#ionItem  target="_blank" href="http://ionicons.com/"}}
+        Ionicons
+      {{/ionItem}}
+    {{/ionList}}
+  {{/ionContent}}
+{{/ionView}}
+</template>
